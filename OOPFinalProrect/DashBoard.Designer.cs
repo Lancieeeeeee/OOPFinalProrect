@@ -34,17 +34,21 @@
             button3 = new Button();
             button4 = new Button();
             button5 = new Button();
+            panel1 = new Panel();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI Semibold", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(447, 57);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(466, 20);
             label1.Name = "label1";
             label1.Size = new Size(267, 50);
             label1.TabIndex = 0;
             label1.Text = "Student Forms";
+            label1.Click += label1_Click;
             // 
             // button1
             // 
@@ -91,6 +95,16 @@
             button5.Text = "Time Table Scheduling Form";
             button5.UseVisualStyleBackColor = true;
             // 
+            // panel1
+            // 
+            panel1.BackColor = Color.MidnightBlue;
+            panel1.Controls.Add(label1);
+            panel1.Dock = DockStyle.Top;
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(1243, 100);
+            panel1.TabIndex = 6;
+            // 
             // DashBoard
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -101,11 +115,12 @@
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
-            Controls.Add(label1);
+            Controls.Add(panel1);
             Name = "DashBoard";
             Text = "DashBoard";
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
@@ -116,5 +131,6 @@
         private Button button3;
         private Button button4;
         private Button button5;
+        private Panel panel1;
     }
 }
