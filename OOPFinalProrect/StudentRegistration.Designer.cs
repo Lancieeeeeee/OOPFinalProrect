@@ -44,6 +44,8 @@
             button2 = new Button();
             button3 = new Button();
             button4 = new Button();
+            label7 = new Label();
+            textBox6 = new TextBox();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -189,11 +191,30 @@
             button4.Text = "Cancel";
             button4.UseVisualStyleBackColor = true;
             // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label7.Location = new Point(56, 372);
+            label7.Name = "label7";
+            label7.Size = new Size(92, 21);
+            label7.TabIndex = 15;
+            label7.Text = "Student ID:";
+            // 
+            // textBox6
+            // 
+            textBox6.Location = new Point(159, 374);
+            textBox6.Name = "textBox6";
+            textBox6.Size = new Size(297, 23);
+            textBox6.TabIndex = 16;
+            // 
             // StudentRegistration
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1067, 547);
+            Controls.Add(textBox6);
+            Controls.Add(label7);
             Controls.Add(button4);
             Controls.Add(button3);
             Controls.Add(button2);
@@ -235,5 +256,7 @@
         private Button button2;
         private Button button3;
         private Button button4;
+        private Label label7;
+        private TextBox textBox6;
     }
 }
