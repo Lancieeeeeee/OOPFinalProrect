@@ -176,6 +176,7 @@
             closeButton.TabIndex = 10;
             closeButton.Text = "X";
             closeButton.UseVisualStyleBackColor = false;
+            closeButton.Click += closeButton_Click;
             // 
             // Form1
             // 

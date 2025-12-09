@@ -50,8 +50,13 @@ namespace OOPFinalProrect
 
         private void signupLabel_Click(object sender, EventArgs e)
         {
-           SignUp signUpForm = new SignUp();
+            SignUp signUpForm = new SignUp();
             signUpForm.ShowDialog();
+        }
+
+        private void closeButton_Click(object sender, EventArgs e)
+        {
+            Form1.ActiveForm.Close();
         }
     }
 }
