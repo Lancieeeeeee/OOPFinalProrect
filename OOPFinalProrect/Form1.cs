@@ -58,5 +58,10 @@ namespace OOPFinalProrect
         {
             Form1.ActiveForm.Close();
         }
+
+        private void forgotPasswordLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

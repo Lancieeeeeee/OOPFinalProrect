@@ -111,6 +111,7 @@
             forgotPasswordLabel.Size = new Size(154, 25);
             forgotPasswordLabel.TabIndex = 5;
             forgotPasswordLabel.Text = "Forgot Password?";
+            forgotPasswordLabel.Click += forgotPasswordLabel_Click;
             // 
             // rememberMeCheckBox
             // 
