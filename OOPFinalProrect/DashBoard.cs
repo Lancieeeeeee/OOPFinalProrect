@@ -21,5 +21,33 @@ namespace OOPFinalProrect
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            StudentRegistration studentRegistrationForm = new StudentRegistration();
+            studentRegistrationForm.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Attendance attendanceForm = new Attendance();
+            attendanceForm.ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            GradeEntry gradeEntryForm = new GradeEntry();
+            gradeEntryForm.ShowDialog();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
