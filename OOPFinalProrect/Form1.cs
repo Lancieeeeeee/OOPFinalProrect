@@ -25,15 +25,16 @@ namespace OOPFinalProrect
 
         private void passwordTextBox_TextChanged(object sender, EventArgs e)
         {
-            password = passwordTextBox.Text;    
+            password = passwordTextBox.Text;
         }
 
         private void loginButton_Click(object sender, EventArgs e)
         {
-            if (users.ContainsKey(username)) {
-                if (users[username] == password) 
-                { 
-                DashBoard dashBoard = new DashBoard();
+            if (users.ContainsKey(username))
+            {
+                if (users[username] == password)
+                {
+                    DashBoard dashBoard = new DashBoard();
                     dashBoard.ShowDialog();
                 }
                 else
@@ -43,8 +44,14 @@ namespace OOPFinalProrect
             }
             else
             {
-                               MessageBox.Show("Invalid username.");
+                MessageBox.Show("Invalid username.");
             }
+        }
+
+        private void signupLabel_Click(object sender, EventArgs e)
+        {
+           SignUp signUpForm = new SignUp();
+            signUpForm.ShowDialog();
         }
     }
 }

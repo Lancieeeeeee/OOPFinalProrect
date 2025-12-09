@@ -82,6 +82,7 @@
             signupLabel.Size = new Size(95, 25);
             signupLabel.TabIndex = 7;
             signupLabel.Text = "or Sign up";
+            signupLabel.Click += signupLabel_Click;
             // 
             // loginButton
             // 
