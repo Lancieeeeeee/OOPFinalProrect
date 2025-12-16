@@ -2,16 +2,25 @@ namespace OOPFinalProrect
 {
     internal static class Program
     {
-        /// <summary>
-        ///  The main entry point for the application.
-        /// </summary>
+       
         [STAThread]
         static void Main()
         {
-            // To customize application configuration such as set high DPI settings or default font,
-            // see https://aka.ms/applicationconfiguration.
-            ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+         
+            bool createdNew = false;
+            using (var mutex = new System.Threading.Mutex(true, "OOPFinalProrect_Singleton_Mutex", out createdNew))
+            {
+                if (!createdNew)
+                {
+                    
+                    MessageBox.Show("Another instance is already running.", "Already running", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+
+                 https://aka.ms/applicationconfiguration.
+                ApplicationConfiguration.Initialize();
+                Application.Run(new Form1());
+            }
         }
     }
 }
