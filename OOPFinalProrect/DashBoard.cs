@@ -42,12 +42,16 @@ namespace OOPFinalProrect
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            // Open Fee Payment form
+            FeeTrackingSys feeForm = new FeeTrackingSys();
+            feeForm.ShowDialog();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            
+            // Open Timetable scheduling form
+            Timetable timetableForm = new Timetable();
+            timetableForm.ShowDialog();
         }
     }
 }

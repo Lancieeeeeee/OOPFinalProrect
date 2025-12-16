@@ -10,6 +10,14 @@
 
   <ItemGroup>
     <PackageReference Include="MySql.Data" Version="9.5.0" />
+    <PackageReference Include="sqlite-net-pcl" Version="1.9.172" />
+    <PackageReference Include="MySqlConnector" Version="2.5.0" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="6.1.1" />
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="8.0.5" />
   </ItemGroup>
 
+  <!-- Attempt to stop any running instance of the app before build to avoid locked output during local development -->
+  <Target Name="KillRunningProcess" BeforeTargets="Build">
+    <Exec Command="taskkill /F /IM OOPFinalProrect.exe" ContinueOnError="true" />
+  </Target>
 </Project>

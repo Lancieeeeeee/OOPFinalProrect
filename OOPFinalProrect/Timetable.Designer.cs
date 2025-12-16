@@ -188,6 +188,7 @@
             Controls.Add(label1);
             Name = "Timetable";
             Text = "Timetable";
+            Load += Timetable_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
